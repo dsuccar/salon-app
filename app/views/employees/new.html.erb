@@ -1,0 +1,9 @@
+<h1> Create a New Employee: </h1>
+
+<%= form_for @employee do |e| %>
+    <%= e.label "Name:" %>
+    <%= e.text_field :name  %>
+    <%= e.label "Specialty:" %>
+    <%= e.text_field :specialty  %>
+    <%=  e.submit  %>
+<% end  %>

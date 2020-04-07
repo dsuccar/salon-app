@@ -1,0 +1,9 @@
+<h1> Create a New Client: </h1>
+
+<%= form_for @client do |c| %>
+    <%= c.label "Name:" %>
+    <%= c.text_field :name  %>
+    <%= c.label "Specialty:" %>
+    <%= c.text_field :member_since  %>
+    <%=  e.submit  %>
+<% end  %>

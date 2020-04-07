@@ -1,0 +1,15 @@
+<h1>All Apointments:</h1>
+
+<% @appointments.each do |appointment|%>
+<div><%= link_to appointment.apt_time, appointment_path(appointment) %></div>
+<% end %>
+
+
+
+<!-- 
+APPOINTMENT ATTRIBUTES
+
+- EMPLOYEE
+- CLIENT 
+- TIME 
+- SERVICE  -->

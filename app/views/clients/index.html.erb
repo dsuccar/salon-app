@@ -1,0 +1,12 @@
+<h1>All Clients</h1>
+<ul>
+    <% @clients.each do |client| %>
+     
+       <li><%= link_to("#{client.name} - member since #{client.member_since}", client_path(client.id))%></li>
+    <% end %>   
+</ul>
+
+
+<h4>Menu:</h4>
+    
+    <div><%= link_to "Create New Client", new_client_path %></div>
